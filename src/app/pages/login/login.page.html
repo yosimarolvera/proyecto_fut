@@ -1,44 +1,56 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title class="ion-text-center">login</ion-title>
+  <ion-toolbar color="tertiary">
+    <ion-title class="ion-text-center">INGRESA TUS CREDENCIALES</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
 
-  <!-- <ion-grid fixed>
+  <ion-grid fixed>
     <ion-row>
-      <ion-col size="10">
+      <ion-col size="4" offset="4">
+
         <ion-card>
+          <!-- <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" /> -->
+          <!-- <ion-img src=“../../assets/img/imagen_login.jpg”></ion-img> -->
+          <!-- <ion-card-header>
+            <ion-card-title>Card Title</ion-card-title>
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+          </ion-card-header> -->
+          <ion-img src="assets/imagen_login.jpg" alt="Balon" />
           <ion-card-content>
             <ion-item lines="none">
-              <ion-input
-                label="Usuario"
-                labelPlacement="floating"
-                placeholder="Ingresa tu usuario"
-              ></ion-input>
+              <ion-input label="Usuario" labelPlacement="floating" placeholder="Ingresa tu usuario"></ion-input>
             </ion-item>
             <ion-item>
-              <ion-input
-                label="Contraseña"
-                labelPlacement="floating"
-                placeholder="Ingresa tu contraseña"
-              ></ion-input>
+              <ion-input label="Contraseña" labelPlacement="floating" placeholder="Ingresa tu contraseña"></ion-input>
             </ion-item>
-
-            <ion-button
-              (click)="guardar()"
-              expand="block"
-              shape="round"
-              color="primary"
-            >
-              Guardar
-            </ion-button>
+            <ion-row>
+              <ion-col>
+                <ion-button (click)="guardar()" expand="block" shape="round" color="secondary">
+                  Registrar
+                </ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button (click)="ingresar()" expand="block" shape="round" color="primary">
+                  Ingresar
+                </ion-button>
+              </ion-col>
+            </ion-row>
           </ion-card-content>
         </ion-card>
       </ion-col>
     </ion-row>
-  </ion-grid> -->
+  </ion-grid>
 
 
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="tertiary">
+    <ion-title class="ion-text-center">Footer Toolbar</ion-title>
+  </ion-toolbar>
+</ion-footer>

@@ -18,4 +18,8 @@ export class LoginPage implements OnInit {
     
   }
 
+  ingresar(){
+    console.log("Voy a ingresar en bd");
+    
+  }
 }
